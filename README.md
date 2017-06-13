@@ -4,7 +4,7 @@ Multiple select list with search bar
 ![react-native-multiple-select-list](https://raw.githubusercontent.com/ataomega/react-native-multiple-select-list/master/screenshot.png)
 
 Example usage :
-```
+```javascript
 <CustomMultiPicker
   options={processedField.options}
   search={true} // should show search bar?
@@ -17,7 +17,7 @@ Example usage :
 ```
 Props:
 options: an object like
-```
+```javascript
 {
   key: value
 }
