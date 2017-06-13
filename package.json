@@ -1,0 +1,36 @@
+{
+  "name": "react-native-multiple-select-list",
+  "version": "0.0.1",
+  "description": "react-native-multiple-select-list",
+  "main": "multipleSelect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataomega/react-native-multiple-select-list.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "react",
+    "native",
+    "multiple",
+    "select",
+    "multiple",
+    "select",
+    "list",
+    "multiple",
+    "select",
+    "with",
+    "search",
+    "radio",
+    "button"
+  ],
+  "author": "Mirata Seddigh Mohammadi ataomega@gmail.com (www.atasmohammadi.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ataomega/react-native-multiple-select-list/issues"
+  },
+  "homepage": "https://github.com/ataomega/react-native-multiple-select-list#readme"
+}
