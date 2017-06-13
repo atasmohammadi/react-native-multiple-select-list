@@ -44,8 +44,14 @@ placeholder: placeholder text for search bar
 placeholderTextColor: placeholder text color for search bar
 returnValue: should it return keys of selected options or values?
 callback: whenever user selects or changes selections it will be called.
-
-NPM package will be released soon.
+rowBackgroundColor: background color for each row in list
+rowHeight: row height
+rowRadius: row border radius
+iconColor: icon color for checked/unchecked icons and search icon also border color of search bar
+iconSize: icon size for checked/unchecked icons
+selectedIconName: selected/checked icon name (react-native-vector-icons/Ionicon)
+unselectedIconName: unselected/unchecked icon name (react-native-vector-icons/Ionicon)
+scrollViewHeight: scrollview height (list of items)
 
 By Ata.
 ataomega@gmail.com

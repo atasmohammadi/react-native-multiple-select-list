@@ -1,6 +1,6 @@
 {
   "name": "react-native-multiple-select-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react-native-multiple-select-list",
   "main": "multipleSelect.js",
   "scripts": {
