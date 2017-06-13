@@ -92,7 +92,7 @@ export default class CustomMultiPicker extends Component {
       <View onLayout={(evt)=>{this.getNewDimensions(evt)}}>
         {this.props.search && <View style={{ flexDirection: 'row', height: 55 }}>
           <View style={{ marginTop: 15, marginLeft: 15, backgroundColor: 'transparent' }}>
-            <Icon name="ios-search-outline" color="#00a2dd" size={25}/>
+            <Icon name="ios-search-outline" color={this.props.iconColor} size={25}/>
           </View>
           <TextInput
             style={{
@@ -103,7 +103,7 @@ export default class CustomMultiPicker extends Component {
               marginLeft: -25,
               padding: 5,
               paddingLeft: 30,
-              borderColor: '#00a2dd',
+              borderColor: this.props.iconColor,
               borderWidth: 1,
               borderRadius: 5
             }}
@@ -115,7 +115,7 @@ export default class CustomMultiPicker extends Component {
           />
         </View>}
         <ScrollView
-          style={{ padding: 5, height: 120 }}
+          style={{ padding: 5, height: this.props.scrollViewHeight }}
         >
           {labels.map((label, index) => {
             const itemKey = returnValue == "label" ? label : values[index]
@@ -128,12 +128,12 @@ export default class CustomMultiPicker extends Component {
                   marginLeft: 2,
                   marginRight: 2,
                   marginBottom: 6,
-                  backgroundColor: '#FFF',
-                  height: 40,
+                  backgroundColor: this.props.rowBackgroundColor,
+                  height: this.props.rowHeight,
                   flexDirection: 'row',
                   justifyContent: 'space-between',
                   alignItems: 'center',
-                  borderRadius: 5
+                  borderRadius: this.props.rowRadius
                 }}
                 onPress={() => {
                   this._onSelect(itemKey)
@@ -143,9 +143,9 @@ export default class CustomMultiPicker extends Component {
                 {
 
                   this._isSelected(itemKey) ?
-                  <Icon name="ios-checkmark-circle-outline" color="#00a2dd" size={30} />
+                  <Icon name={this.props.selectedIconName} color={this.props.iconColor} size={this.props.iconSize} />
                   :
-                  <Icon name="ios-radio-button-off-outline" color="#00a2dd" size={30} />
+                  <Icon name={this.props.unselectedIconName} color={this.props.iconColor} size={this.props.iconSize} />
                 }
               </TouchableOpacity>
             )

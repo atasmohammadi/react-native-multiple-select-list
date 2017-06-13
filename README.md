@@ -12,11 +12,19 @@ import CustomMultiPicker from "react-native-multiple-select-list";
 <CustomMultiPicker
   options={processedField.options}
   search={true} // should show search bar?
-  multiple={true}
+  multiple={true} //
   placeholder={I18n.t("discussions_search_user_placeholder")}
-  placeholderTextColor={'#757575'} // color
+  placeholderTextColor={'#757575'}
   returnValue={"label"} // label or value
-  callback={(res)=>{ console.log(res) }} // callback, when selection changes.
+  callback={(res)=>{ console.log(res) }} // callback, when selections changed.
+  rowBackgroundColor={"#eee"}
+  rowHeight={40}
+  rowRadius={5}
+  iconColor={"#00a2dd"}
+  iconSize={30}
+  selectedIconName="ios-checkmark-circle-outline"
+  unselectedIconName="ios-radio-button-off-outline"
+  scrollViewHeight={130}
 />
 ```
 
