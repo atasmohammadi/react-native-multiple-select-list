@@ -2,9 +2,15 @@
 Multiple select list with search bar
 
 ![react-native-multiple-select-list](https://raw.githubusercontent.com/ataomega/react-native-multiple-select-list/master/screenshot.png)
+Install :
+```
+npm install --save react-native-multiple-select-list
 
+```
 Example usage :
 ```javascript
+import CustomMultiPicker from "react-native-multiple-select-list";
+
 <CustomMultiPicker
   options={processedField.options}
   search={true} // should show search bar?
