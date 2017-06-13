@@ -1,7 +1,6 @@
 # react-native-multiple-select-list
 Multiple select list with search bar
 
-![react-native-multiple-select-list](https://raw.githubusercontent.com/ataomega/react-native-multiple-select-list/master/screenshot.png)
 Install :
 ```
 npm install --save react-native-multiple-select-list
@@ -21,6 +20,10 @@ import CustomMultiPicker from "react-native-multiple-select-list";
   callback={(res)=>{ console.log(res) }} // callback, when selection changes.
 />
 ```
+
+![react-native-multiple-select-list](https://raw.githubusercontent.com/ataomega/react-native-multiple-select-list/master/screenshot.png)
+
+
 Props:
 options: an object like
 ```javascript
