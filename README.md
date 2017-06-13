@@ -4,7 +4,7 @@ Multiple select list with search bar
 ![react-native-multiple-select-list](https://raw.githubusercontent.com/ataomega/react-native-multiple-select-list/master/screenshot.png)
 
 Example usage :
-
+```
 <CustomMultiPicker
   options={processedField.options}
   search={true} // should show search bar?
@@ -14,6 +14,7 @@ Example usage :
   returnValue={"label"} // label or value
   callback={(res)=>{ console.log(res) }} // callback, when selections changed.
 />
+```
 
 By Ata.
 ataomega@gmail.com
