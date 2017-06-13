@@ -1,6 +1,8 @@
 /**
  * Multiple select list with search
  * ataomega@gmail.com
+ * www.atasmohammadi.net
+ * version 1.0
  */
 import React, {Component, PropTypes} from "react";
 import {

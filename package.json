@@ -1,6 +1,6 @@
 {
   "name": "react-native-multiple-select-list",
-  "version": "0.0.2",
+  "version": "1.0",
   "description": "react-native-multiple-select-list",
   "main": "multipleSelect.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ataomega/react-native-multiple-select-list.git"
+  },
+  "dependencies": {
+    "react-native-vector-icons": "^3.0.0"
   },
   "keywords": [
     "react",
@@ -28,7 +31,7 @@
     "button"
   ],
   "author": "Mirata Seddigh Mohammadi ataomega@gmail.com (www.atasmohammadi.net)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ataomega/react-native-multiple-select-list/issues"
   },

@@ -9,21 +9,27 @@ Example usage :
 ```javascript
 import CustomMultiPicker from "react-native-multiple-select-list";
 
+const userList = {
+  "123":"Tom",
+  "124":"Michael",
+  "125":"Christin"
+}
+
 <CustomMultiPicker
-  options={processedField.options}
+  options={userList}
   search={true} // should show search bar?
   multiple={true} //
-  placeholder={I18n.t("discussions_search_user_placeholder")}
+  placeholder={"Search"}
   placeholderTextColor={'#757575'}
   returnValue={"label"} // label or value
-  callback={(res)=>{ console.log(res) }} // callback, when selections changed.
+  callback={(res)=>{ console.log(res) }} // callback, array of selected items
   rowBackgroundColor={"#eee"}
   rowHeight={40}
   rowRadius={5}
   iconColor={"#00a2dd"}
   iconSize={30}
-  selectedIconName="ios-checkmark-circle-outline"
-  unselectedIconName="ios-radio-button-off-outline"
+  selectedIconName={"ios-checkmark-circle-outline"}
+  unselectedIconName={"ios-radio-button-off-outline"}
   scrollViewHeight={130}
 />
 ```
@@ -32,7 +38,7 @@ import CustomMultiPicker from "react-native-multiple-select-list";
 
 
 Props:
-options: an object like
+options: an object
 ```javascript
 {
   key: value
