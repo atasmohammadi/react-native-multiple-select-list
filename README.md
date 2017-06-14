@@ -38,28 +38,23 @@ const userList = {
 
 
 ### Props:
-* options: an object
-```javascript
-{
-  key: value
-}
-```
-| Prop | Description |
-| ------ | ------ |
-| search | if search bar should be shown or not |
-| multiple | if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons. |
-| placeholder | placeholder text for search bar |
-| placeholderTextColor | placeholder text color for search bar |
-| returnValue | should it return keys of selected options or values? |
-| callback | whenever user selects or changes selections it will be called. |
-| rowBackgroundColor | background color for each row in list |
-| rowHeight | row height |
-| rowRadius | row border radius |
-| iconColor | icon color for checked/unchecked icons and search icon also border color of search bar |
-| iconSize | icon size for checked/unchecked icons |
-| selectedIconName | selected/checked icon name (react-native-vector-icons/Ionicon) |
-| unselectedIconName | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
-| scrollViewHeight | scrollview height (list of items) |
+| Prop | Type | Description |
+| ------ | ------ | ------ |
+| options | Object | list of options/items |
+| search | Boolean | if the search bar should be shown or not |
+| multiple | Boolean | if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons. |
+| placeholder | String | placeholder text for search bar |
+| placeholderTextColor | String | placeholder text color for search bar |
+| returnValue | String | should it return keys of selected options or values? |
+| callback | Function | whenever user selects or changes selections it will be called. |
+| rowBackgroundColor | String | background color for each row in list |
+| rowHeight | Integer | row height |
+| rowRadius | Integer | row border radius |
+| iconColor | String | icon color for checked/unchecked icons and search icon also border color of search bar |
+| iconSize | Integer | icon size for checked/unchecked icons |
+| selectedIconName | String | selected/checked icon name (react-native-vector-icons/Ionicon) |
+| unselectedIconName | String | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
+| scrollViewHeight | Integer |scrollview height (list of items) |
 
 ### Author:
 Ata S.Mohammadi.
