@@ -45,7 +45,7 @@ const userList = {
 }
 ```
 * search: if search bar should be shown or not
-* multipe: if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons.
+* multiple: if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons.
 * placeholder: placeholder text for search bar
 * placeholderTextColor: placeholder text color for search bar
 * returnValue: should it return keys of selected options or values?
