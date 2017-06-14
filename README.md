@@ -44,20 +44,22 @@ const userList = {
   key: value
 }
 ```
-* search: if search bar should be shown or not
-* multiple: if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons.
-* placeholder: placeholder text for search bar
-* placeholderTextColor: placeholder text color for search bar
-* returnValue: should it return keys of selected options or values?
-* callback: whenever user selects or changes selections it will be called.
-* rowBackgroundColor: background color for each row in list
-* rowHeight: row height
-* rowRadius: row border radius
-* iconColor: icon color for checked/unchecked icons and search icon also border color of search bar
-* iconSize: icon size for checked/unchecked icons
-* selectedIconName: selected/checked icon name (react-native-vector-icons/Ionicon)
-* unselectedIconName: unselected/unchecked icon name (react-native-vector-icons/Ionicon)
-* scrollViewHeight: scrollview height (list of items)
+| Prop | Description |
+| ------ | ------ |
+| search | if search bar should be shown or not |
+| multiple | if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons. |
+| placeholder | placeholder text for search bar |
+| placeholderTextColor | placeholder text color for search bar |
+| returnValue | should it return keys of selected options or values? |
+| callback | whenever user selects or changes selections it will be called. |
+| rowBackgroundColor | background color for each row in list |
+| rowHeight | row height |
+| rowRadius | row border radius |
+| iconColor | icon color for checked/unchecked icons and search icon also border color of search bar |
+| iconSize | icon size for checked/unchecked icons |
+| selectedIconName | selected/checked icon name (react-native-vector-icons/Ionicon) |
+| unselectedIconName | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
+| scrollViewHeight | scrollview height (list of items) |
 
 ### Author:
 Ata S.Mohammadi.
