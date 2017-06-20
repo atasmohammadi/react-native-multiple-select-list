@@ -28,9 +28,12 @@ export default class CustomMultiPicker extends Component {
   }
 
   componentDidMount = () => {
-    this.props.selected.map(select => {
-      this._onSelect(select)
-    })
+    const selected = this.props.selected
+    if(typeof selected === "object"){
+      selected.map(select => {
+        this._onSelect(select)
+      })
+    }
   }
 
   getNewDimensions(event){
