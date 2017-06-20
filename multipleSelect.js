@@ -33,6 +33,8 @@ export default class CustomMultiPicker extends Component {
       selected.map(select => {
         this._onSelect(select)
       })
+    } else {
+      this._onSelect(selected)
     }
   }
 
