@@ -27,6 +27,12 @@ export default class CustomMultiPicker extends Component {
     };
   }
 
+  componentDidMount = () => {
+    this.props.selected.map(select => {
+      this._onSelect(select)
+    })
+  }
+
   getNewDimensions(event){
         var pageHeight = event.nativeEvent.layout.height
         var pageWidth = event.nativeEvent.layout.width

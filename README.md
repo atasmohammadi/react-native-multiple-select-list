@@ -31,6 +31,7 @@ const userList = {
   selectedIconName={"ios-checkmark-circle-outline"}
   unselectedIconName={"ios-radio-button-off-outline"}
   scrollViewHeight={130}
+  selected={[1,2]} // list of options which are selected by default
 />
 ```
 
@@ -55,6 +56,7 @@ const userList = {
 | selectedIconName | String | selected/checked icon name (react-native-vector-icons/Ionicon) |
 | unselectedIconName | String | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
 | scrollViewHeight | Integer |scrollview height (list of items) |
+| selected | Object | list of options which are selected by default |
 
 ### Author:
 Ata S.Mohammadi.
