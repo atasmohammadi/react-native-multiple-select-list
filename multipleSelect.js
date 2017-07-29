@@ -29,11 +29,11 @@ export default class CustomMultiPicker extends Component {
 
   componentDidMount = () => {
     const selected = this.props.selected
-    if(typeof selected === "object"){
+    if(instanceof selected Array){
       selected.map(select => {
         this._onSelect(select)
       })
-    } else {
+    } else if(selected) {
       this._onSelect(selected)
     }
   }
