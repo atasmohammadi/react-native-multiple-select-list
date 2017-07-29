@@ -102,7 +102,7 @@ export default class CustomMultiPicker extends Component {
     const labels = Object.keys(list).map(i => list[i])
     const values = Object.keys(list)
     return(
-      <View onLayout={(evt)=>{this.getNewDimensions(evt)}}>
+      <View >
         {this.props.search && <View style={{ flexDirection: 'row', height: 55 }}>
           <View style={{ marginTop: 15, marginLeft: 15, backgroundColor: 'transparent' }}>
             <Icon name="ios-search-outline" color={this.props.iconColor} size={25}/>
