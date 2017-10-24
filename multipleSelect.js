@@ -1,9 +1,4 @@
-/**
- * Multiple select list with search
- * ataomega@gmail.com
- * www.atasmohammadi.net
- * version 1.0
- */
+// work-in-progress for reactxp
 import React, {Component, PropTypes} from "react";
 import {
   Text,
@@ -21,7 +16,7 @@ export default class CustomMultiPicker extends Component {
     super(props);
     this.state = {
       pageWidth: Dimensions.get('window').width,
-      pageHeight: Dimensions.get('window').height,
+      pageHeight: 50,
       searchText: null,
       selected: []
     };
@@ -39,7 +34,7 @@ export default class CustomMultiPicker extends Component {
   }
 
   getNewDimensions(event){
-        var pageHeight = event.nativeEvent.layout.height
+        var pageHeight = 50
         var pageWidth = event.nativeEvent.layout.width
         this.setState({
             pageHeight, pageWidth
@@ -102,14 +97,14 @@ export default class CustomMultiPicker extends Component {
     const labels = Object.keys(list).map(i => list[i])
     const values = Object.keys(list)
     return(
-      <View onLayout={(evt)=>{this.getNewDimensions(evt)}}>
+      <View style={{flex: 1, alignSelf: 'stretch', flexDirection: 'column', height: 50, maxHeight: 200 }}>
         {this.props.search && <View style={{ flexDirection: 'row', height: 55 }}>
           <View style={{ marginTop: 15, marginLeft: 15, backgroundColor: 'transparent' }}>
             <Icon name="ios-search-outline" color={this.props.iconColor} size={25}/>
           </View>
           <TextInput
             style={{
-              width: this.state.pageWidth-20,
+              width: 300,
               height: 35,
               margin: 0,
               marginTop: 10,
@@ -137,7 +132,7 @@ export default class CustomMultiPicker extends Component {
                 key={Math.round(Math.random() * 1000000)}
                 style={{
                   padding: 7,
-                  marginTop: 0,
+                  marginTop: 5,
                   marginLeft: 2,
                   marginRight: 2,
                   marginBottom: 6,
