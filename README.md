@@ -57,6 +57,10 @@ const userList = {
 | unselectedIconName | String | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
 | scrollViewHeight | Integer |scrollview height (list of items) |
 | selected | Object | list of options which are selected by default |
+| scrollViewStyle | Object | Style object for scrollView that holds all items
+| itemStyle | Object | Style object for the touchableOpacity of each item
+| selectedIconStyle | Object | style object for the icon when selected
+| unselectedIconStyle | Object | style object for the icon when unselected
 
 ### Author:
 Ata S.Mohammadi.
