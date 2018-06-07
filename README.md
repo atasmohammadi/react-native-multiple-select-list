@@ -15,6 +15,12 @@ const userList = {
   "125":"Christin"
 }
 
+//const userList = {
+//  "123":<View><Text>Tom</Text></View>,
+//  "124":<View><Text>Michael</Text></View>,
+//  "125":<View><Text>Christin</Text></View>
+//}
+
 <CustomMultiPicker
   options={userList}
   search={true} // should show search bar?
@@ -59,6 +65,7 @@ const userList = {
 | selected | Object | list of options which are selected by default |
 | scrollViewStyle | Object | Style object for scrollView that holds all items
 | itemStyle | Object | Style object for the touchableOpacity of each item
+| labelStyle | Object | Style object for the text label
 | selectedIconStyle | Object | style object for the icon when selected
 | unselectedIconStyle | Object | style object for the icon when unselected
 
