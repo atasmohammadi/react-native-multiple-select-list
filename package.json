@@ -1,6 +1,6 @@
 {
   "name": "react-native-multiple-select-list",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react-native-multiple-select-list",
   "main": "multipleSelect.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ataomega/react-native-multiple-select-list.git"
   },
   "dependencies": {
-    "react-native-vector-icons": "^4.3.0"
+    "react-native-vector-icons": "^4.5.0"
   },
   "keywords": [
     "react",
