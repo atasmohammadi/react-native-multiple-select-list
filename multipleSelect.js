@@ -154,7 +154,12 @@ export default class CustomMultiPicker extends Component {
                   this._onSelect(itemKey)
                 }}
               >
-                <Text style={this.props.labelStyle}>{label}</Text>
+                {React.isValidElement(label)
+                  ?
+                  label
+                  :
+                  <Text style={this.props.labelStyle}>{label}</Text>
+                }
                 {
 
                   this._isSelected(itemKey) ?
