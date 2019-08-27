@@ -40,7 +40,7 @@ const userList = {
   selectedIconName={"ios-checkmark-circle-outline"}
   unselectedIconName={"ios-radio-button-off-outline"}
   scrollViewHeight={130}
-  selected={[223, 125]} // list of options which are selected by default
+  selected={["Tom", "Christin"]} // list of options which are selected by default
 />
 ```
 
