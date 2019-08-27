@@ -32,9 +32,9 @@ const userList = {
   rowBackgroundColor={"#eee"}
   rowHeight={40}
   rowRadius={5}
-	searchIconName="ios-checkmark"
-	searchIconColor="red"
-	searchIconSize={30}
+  searchIconName="ios-checkmark"
+  searchIconColor="red"
+  searchIconSize={30}
   iconColor={"#00a2dd"}
   iconSize={30}
   selectedIconName={"ios-checkmark-circle-outline"}
@@ -60,9 +60,9 @@ const userList = {
 | rowBackgroundColor | String | background color for each row in list |
 | rowHeight | Integer | row height |
 | rowRadius | Integer | row border radius |
-| seearchIconName | String | Name of the vector icon displayed on the search bar |
-| seearchIconSize | Integer | icon size for the icon displayed on the search bar |
-| seearchIconColor | String | icon color the icon displayed on the search bar |
+| searchIconName | String | Name of the vector icon displayed on the search bar |
+| searchIconSize | Integer | icon size for the icon displayed on the search bar |
+| searchIconColor | String | icon color the icon displayed on the search bar |
 | iconSize | Integer | icon size for checked/unchecked icons |
 | iconColor | String | icon color for checked/unchecked icons and search icon also border color of search bar |
 | iconSize | Integer | icon size for checked/unchecked icons |
