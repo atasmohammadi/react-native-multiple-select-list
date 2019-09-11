@@ -32,12 +32,15 @@ const userList = {
   rowBackgroundColor={"#eee"}
   rowHeight={40}
   rowRadius={5}
+  searchIconName="ios-checkmark"
+  searchIconColor="red"
+  searchIconSize={30}
   iconColor={"#00a2dd"}
   iconSize={30}
   selectedIconName={"ios-checkmark-circle-outline"}
   unselectedIconName={"ios-radio-button-off-outline"}
   scrollViewHeight={130}
-  selected={[1,2]} // list of options which are selected by default
+  selected={["Tom", "Christin"]} // list of options which are selected by default
 />
 ```
 
@@ -57,6 +60,10 @@ const userList = {
 | rowBackgroundColor | String | background color for each row in list |
 | rowHeight | Integer | row height |
 | rowRadius | Integer | row border radius |
+| searchIconName | String | Name of the vector icon displayed on the search bar |
+| searchIconSize | Integer | icon size for the icon displayed on the search bar |
+| searchIconColor | String | icon color the icon displayed on the search bar |
+| iconSize | Integer | icon size for checked/unchecked icons |
 | iconColor | String | icon color for checked/unchecked icons and search icon also border color of search bar |
 | iconSize | Integer | icon size for checked/unchecked icons |
 | selectedIconName | String | selected/checked icon name (react-native-vector-icons/Ionicon) |
