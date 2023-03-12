@@ -77,5 +77,5 @@ const userList = {
 | unselectedIconStyle | Object | style object for the icon when unselected
 
 ### Author:
-Ata S.Mohammadi.
-ataomega@gmail.com
+Ata Mohammadi.
+atasmohammadi@gmail.com
