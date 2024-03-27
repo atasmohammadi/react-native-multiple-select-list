@@ -29,11 +29,11 @@ export default class CustomMultiPicker extends Component {
 
   componentDidMount = () => {
     const selected = this.props.selected
-    if(typeof selected === "object"){
+    if(instanceof selected Array){
       selected.map(select => {
         this._onSelect(select)
       })
-    } else {
+    } else if(selected) {
       this._onSelect(selected)
     }
   }
@@ -102,7 +102,7 @@ export default class CustomMultiPicker extends Component {
     const labels = Object.keys(list).map(i => list[i])
     const values = Object.keys(list)
     return(
-      <View onLayout={(evt)=>{this.getNewDimensions(evt)}}>
+      <View >
         {this.props.search && <View style={{ flexDirection: 'row', height: 55 }}>
           <View style={{ marginTop: 15, marginLeft: 15, backgroundColor: 'transparent' }}>
             <Icon name={this.props.searchIconName || "ios-search"} color={this.props.searchIconColor || this.props.iconColor} size={this.props.searchIconSize || this.props.iconSize || 25} />
